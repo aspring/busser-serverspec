@@ -4,6 +4,14 @@ SimpleCov.start
 require 'aruba/cucumber'
 require 'busser/cucumber'
 
+=begin
+# Aruba::VERSION >= 0.7.0
+Aruba.configure do |c|
+  c.root_directory = '/'
+  c.working_directory = ''
+end
+=end
+
 Before do
   @aruba_timeout_seconds = 60
 end
